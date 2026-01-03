@@ -6,6 +6,7 @@
 
     <!-- Liens CSS -->
     <link rel="stylesheet" href="src/css/root.css">
+    <link rel="stylesheet" href="src/css/style.css">
 
     <title>GustoVite</title>
 </head>
@@ -14,7 +15,23 @@
     <header id="header" class="header"></header>
 
     <!-- MAIN -->
-    <main id="main" class="main"></main>
+    <main id="main" class="main">
+        <!-- Hero section -->
+        <section id="acceuil" class="hero">
+            <h1 id="title" class="top">Des plats uniques, des saveurs qui restent en mémoire</h1>
+            <div class="profile-contain">
+                <img src="src/images/entree/salade.jpg" alt="Plat" class="left slow">
+                <img src="src/images/plats/sauter-de-boeuf.jpg" alt="Plat" class="left fast">
+                <img src="src/images/desserts/salade-fruit.jpg" alt="Plat" class="right fast">
+                <img src="src/images/boissons/cocktail.jpg" alt="Plat" class="right slow">
+            </div>
+            <p id="textHero" class="bottom">
+                Chez GustoVite, nous allions rapidité et authenticité pour vous offrir des plats 
+                délicieux, inspirés des recettes locales et internationales, au coeur de Dschang.
+            </p>
+            <button id="heroBtn" class="bottom" onclick="window.location.href= '#reservation'">Réserver une table</button>
+        </section>
+    </main>
 
     <!-- FOOTER -->
     <footer id="footer" class="footer"></footer>
