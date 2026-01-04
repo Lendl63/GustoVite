@@ -123,7 +123,7 @@ h3 {
 }
 
 #heroBtn,
-.menu-btn {
+.more-btn {
     font-size: var(--font-size-h3);
     font-weight: var(--font-weight-bold);
     border-radius: var(--border-radius-pill);
@@ -134,7 +134,7 @@ h3 {
 }
 
 #heroBtn:hover,
-.menu-btn:hover {
+.more-btn:hover {
     border: 3px solid var(--color-primary);
 }
 
@@ -298,6 +298,29 @@ h3 {
 .valeur.active .scroll {
     transform: rotate(180deg);
 }
+
+/*==== ABOUT SECTION ====*/
+.gallery-contain {
+    column-count: 3;
+    column-gap: 0;
+    width: 100%;
+    max-width: 95vw;
+    margin: auto;
+}
+
+.gallery-contain img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+    will-change: transform;
+}
+
+.gallery-contain img:hover {
+    transform: scale(1.05);
+}
+
 
 /*===== RESERVATION SECTION =====*/
 .reservation-contain {
