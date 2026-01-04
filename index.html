@@ -91,6 +91,66 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Reservation section -->
+        <section id="reservation" class="reservation fade-in">
+            <h1>04 - Réservation</h1>
+            <div class="reservation-contain">
+                <div class="infos">
+                    <img src="/images/icon/reservation.png" alt="icon" class="reservation-icon">
+                    <div>
+                        <div class="info">
+                            <img src="/images/icon/localisation.png" alt="icon">
+                            <p>Dschang</p>
+                        </div>
+                        <div class="info">
+                            <img src="/images/icon/whatsapp.png" alt="icon">
+                            <p>Whatsapp</p>
+                        </div>
+                        <div class="info">
+                            <img src="/images/icon/heures-douverture.png" alt="icon">
+                            <p>27H/7</p>
+                        </div>
+                        <div class="info">
+                            <img src="/images/icon/e-mail.png" alt="icon">
+                            <p>E-mail</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <h2>Réservez votre table maintenant !</h2>
+                    <form action="" id="reservationform">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder=" " required>
+                            <label for="name">Votre nom</label>
+                            <span class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="phone-number" id="phone-number" placeholder=" " required>
+                            <label for="phone-number">Télephone</label>
+                            <span class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="date" id="date" placeholder=" " required>
+                            <label for="date">Date (JJ/MM/AAAA)</label>
+                            <span class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="time" id="time" placeholder=" " required>
+                            <label for="time">Heure (HH:MM)</label>
+                            <span class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="people" id="people" min="1" max="4" placeholder=" " required>
+                            <label for="people">Nombre de place (1 - 10)</label>
+                            <span class="error"></span>
+                        </div>
+                        <button type="submit" id="reservationBtn">Réserver</button>
+                        <p class="succes-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->

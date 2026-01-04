@@ -259,3 +259,127 @@ h3 {
 .valeur.active .scroll {
     transform: rotate(180deg);
 }
+
+/*===== RESERVATION SECTION =====*/
+.reservation-contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--space-lg);
+    width: 100%;
+}
+
+.reservation-contain .infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--space-lg);
+}
+
+.infos > img {
+    width: 60rem;
+    height: 60rem;
+    border-radius: var(--border-radius-pill);
+    object-fit: cover;
+}
+
+.infos > div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-md);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xs);
+    background: var(--color-bg);
+    color: var(--color-primary-light);
+    border-radius: var(--border-radius-lg);
+    border: 2px solid var(--color-primary-light);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.info img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.form {
+    padding: 5rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+    border-radius: var(--border-radius-pill);
+    border: 2px solid var(--color-primary-light);
+}
+
+.form h2 {
+    margin-bottom: var(--space-xl);
+}
+
+#reservationform {
+    max-width: 50rem;
+    margin: auto;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: var(--space-md);
+}
+
+.form-group input {
+    width: 100%;
+    padding: var(--space-md);
+    background: var(--color-bg-alt);
+    border: 2px solid var(--color-bg);
+    border-radius: var(--border-radius-md);
+    outline: none;
+    color: var(--color-text-muted);
+}
+
+.form-group label {
+    position: absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
+    transition: 0.3s all;
+    background: var(--color-bg-alt);
+    padding: 0 0.5rem;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label{
+    top: -1rem;
+    left: 0.8rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    padding: 0 0.5rem;
+}
+
+.form-group input:focus {
+    border-color: var(--color-primary-dark);
+}
+
+.error {
+    color: var(--color-error);
+    font-size: var(--font-size-lg);
+    display: none;
+    margin-top: 0.5rem;
+    position: absolute;
+    left: 0;
+}
+
+#reservationBtn{
+    width: 100%;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--border-radius-pill);
+}
+
+#reservationBtn:hover {
+    border: 2px solid var(--color-primary-dark);
+}
