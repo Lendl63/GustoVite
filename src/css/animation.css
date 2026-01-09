@@ -16,3 +16,13 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/*===== ACCORDÉON DES VALEURS =====*/
+.value.active .detail {
+    max-height: 20rem;
+    opacity: 1;
+}
+
+.value.active .scroll {
+    transform: rotate(180deg);
+}

@@ -48,3 +48,21 @@ const fadeEls = document.querySelectorAll('.fade-in');
 fadeEls.forEach(fader => {
     sectionObserver.observe(fader);
 });
+
+/*===== ACCORDÉON DES VALEURS =====*/
+const fleches = document.querySelectorAll(".value .scroll");
+const valeurs = document.querySelectorAll('.value');
+
+fleches.forEach(fleche => {
+    fleche.addEventListener("click", (e) => {
+        e.stopImmediatePropagation();
+        
+        let valeur = fleche.closest(".value");
+        valeurs.forEach(v => {
+            if (v !== valeur) {
+                v.classList.remove("active");
+            }
+        });
+        valeur.classList.toggle("active");
+    });
+});

@@ -349,15 +349,6 @@ header {
     opacity: 0;
 }
 
-.valeur.active .detail {
-    max-height: 20rem;
-    opacity: 1;
-}
-
-.valeur.active .scroll {
-    transform: rotate(180deg);
-}
-
 /*==== ABOUT SECTION ====*/
 .gallery-contain {
     column-count: 3;
