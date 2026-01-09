@@ -66,3 +66,89 @@ fleches.forEach(fleche => {
         valeur.classList.toggle("active");
     });
 });
+
+/*===== ACCORDÉON DES VALEURS =====*/
+function initCarousel() {
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    
+    if (!track || !prevBtn || !nextBtn) return;
+    
+    let cards = document.querySelectorAll('.review-card');
+    let current = Math.floor(cards.length / 2);
+    let autoSlide = null;
+
+    function calculateCardTotalWidth(card) {
+        const rect = card.getBoundingClientRect();
+        const style = getComputedStyle(card);
+        const marginLeft = parseFloat(style.marginLeft) || 0;
+        const marginRight = parseFloat(style.marginRight) || 0;
+        return rect.width + marginLeft + marginRight;
+    }
+
+    function updateCarousel() {
+        if (cards.length === 0) return;
+        if (current < 0) current = 0;
+        if (current >= cards.length) current = cards.length - 1;
+
+        const totalWidth = calculateCardTotalWidth(cards[0]);
+        const containerWidth = track.parentElement.clientWidth;
+        const offset = -(current * totalWidth) + (containerWidth / 2 - totalWidth / 2);
+
+        track.style.transform = `translateX(${offset}px)`;
+
+        cards.forEach((card, i) => {
+            card.classList.toggle('active', i === current);
+            card.setAttribute('aria-hidden', i === current ? 'false' : 'true');
+        });
+    }
+
+    function startAuto() {
+        stopAuto();
+        autoSlide = setInterval(() => {
+            current = (current + 1) % cards.length;
+            updateCarousel();
+        }, 5000);
+    }
+
+    function stopAuto() {
+        if (autoSlide) {
+            clearInterval(autoSlide);
+            autoSlide = null;
+        }
+    }
+
+    function navigate(direction) {
+        stopAuto();
+        current = (current + direction + cards.length) % cards.length;
+        updateCarousel();
+        startAuto();
+    }
+
+    nextBtn.addEventListener('click', () => navigate(1));
+    prevBtn.addEventListener('click', () => navigate(-1));
+
+    // Pause au survol
+    const container = track.parentElement;
+    container.addEventListener('mouseenter', stopAuto);
+    container.addEventListener('mouseleave', startAuto);
+
+    window.addEventListener('resize', updateCarousel);
+
+    updateCarousel();
+    startAuto();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCarousel);
+} else {
+    initCarousel();
+}
+
+/*===== NETTOYAGE APRÈS CHARGEMENT ====*/
+
+window.addEventListener('load', () => {
+    history.replaceState(null, null, window.location.pathname);
+    window.scrollTo(0, 0);
+});
