@@ -1,6 +1,5 @@
-
 // ============================================
-// CHARGEMENT DES MENUS
+// 1. CHARGEMENT DES MENUS
 // ============================================
 
 const categories = [
@@ -57,9 +56,12 @@ if (menuContainer) {
     });
 }
 
-/*===== ANIMATION DES MENUS =====*/
 
-// UN SEUL observeur réutilisable au lieu de multiples
+// ============================================
+// 2. ANIMATION DES MENUS
+// ============================================
+
+
 const menuItemObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
