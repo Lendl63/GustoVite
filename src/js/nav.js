@@ -99,3 +99,38 @@ window.addEventListener('load', () => {
     history.replaceState(null, null, window.location.pathname);
     window.scrollTo(0, 0);
 });
+
+//=============================================================
+// 5. APPLICATION DU RESPONSIVE MODAL SUR MOBILE
+//=============================================================
+
+/*===== Throttle helper pour performance =====*/
+const throttle = (func, delay) => {
+    let lastCall = 0;
+    return function(...args) {
+        const now = Date.now();
+        if (now - lastCall >= delay) {
+            lastCall = now;
+            func(...args);
+        }
+    };
+};
+
+/*===== Verification du type d'appareil =====*/
+const isMobile = () => {
+    const width = window.innerWidth;
+    const nav = document.querySelector('.nav');
+    const menu = document.querySelector('.menu');
+
+    if (width < 1025) {
+        navDiv.style.display = "none";
+        navMenu.style.display = "flex";
+    } else {
+        nav.style.display = "flex";
+        menu.style.display = "none";
+    }
+}
+
+/*===== Application du responsive (nav modal) sur tablette et modile =====*/
+window.addEventListener('resize', throttle(isMobile, 250));
+isMobile();
