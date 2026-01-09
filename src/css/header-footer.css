@@ -1,8 +1,7 @@
-/*==================================================
-  Style CSS File
-==================================================*/
+/*==================================
+// 1. BASIC STYLES
+==================================*/
 
-/*==== BASIC STYLES ====*/
 * {
     box-sizing: border-box;
 }
@@ -91,7 +90,10 @@ p {
     padding: var(--space-xs);
 }
 
-/*==== HEADER SECTION ====*/
+/*==================================
+// 2. HEADER SECTION
+==================================*/
+
 header {
     position: fixed;
     top: 0;
@@ -150,7 +152,101 @@ header {
     color: var(--color-primary-dark);
 }
 
-/*===== FOOTER =====*/
+/*==================================
+// 3. NAVIGATION MODAL
+==================================*/
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+}
+
+
+.nav-modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    will-change: transform, opacity;
+}
+
+.modal {
+    background: var(--color-bg);
+    border-radius: var(--border-radius-pill);
+    width: 80%;
+    max-width: 40rem;
+    text-align: center;
+    box-shadow: 0 0.4rem 1rem var(--color-primary);
+    border: var(--color-primary);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: var(--space-md);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-sm);
+    width: 5rem;
+    height: 5rem;
+    color: var(--color-bg);
+    border-radius: var(--border-radius-round);
+    background-color: var(--color-primary);
+    border: none;
+}
+
+#modalTitle {
+    color: var(--color-primary-light);
+    text-align: center;
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+}
+
+.modal a {
+    display: block;
+    padding: var(--space-sm);
+    text-decoration: none;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    border-top: 0.2rem solid var(--color-primary);
+    transition: color 0.3s ease-out;
+}
+
+.modal a:hover {
+    color: var(--color-primary-dark);
+}
+
+/*==================================
+// 4. FOOTER
+==================================*/
+
 .footer {
     background: var(--color-bg);
     color: var(--color-text);
