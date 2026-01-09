@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: var(--color-bg) url(../images/bg-image.png);
+    background: var(--color-bg) url(../images/bg-image.webp);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;

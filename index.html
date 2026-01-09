@@ -19,7 +19,14 @@
     <!-- HEADER -->
     <header id="header" class="header">
         <div class="logo">
-            <img src="/images/logo.png" alt="Logo">
+            <img 
+                src="src/images/logo.webp" 
+                alt="Logo"
+                loading="lazy"
+                decoding="async"
+                width="80"
+                height="80"
+            >
             <span>GustoVite</span>
         </div>
         <div class="nav" id="header-nav">
@@ -38,10 +45,10 @@
         <section id="hero" class="hero">
             <h1 id="title" class="top">Des plats uniques, des saveurs qui restent en mémoire</h1>
             <div class="profile-contain">
-                <img src="src/images/entree/salade.jpg" alt="Plat" class="left slow">
-                <img src="src/images/plats/sauter-de-boeuf.jpg" alt="Plat" class="left fast">
-                <img src="src/images/desserts/salade-fruit.jpg" alt="Plat" class="right fast">
-                <img src="src/images/boissons/cocktail.jpg" alt="Plat" class="right slow">
+                <img src="src/images/menu/entree/salade.webp" alt="Plat" loading="lazy" decoding="async" width="200" height="1000" class="left slow">
+                <img src="src/images/menu/plats/sauter-de-boeuf.webp" alt="Plat" loading="lazy" decoding="async" width="200" height="1000" class="left fast">
+                <img src="src/images/menu/desserts/salade-fruit.webp" alt="Plat" loading="lazy" decoding="async" width="200" height="1000" class="right fast">
+                <img src="src/images/menu/boissons/cocktail.webp" alt="Plat" loading="lazy" decoding="async" width="200" height="1000" class="right slow">
             </div>
             <p id="textHero" class="bottom">
                 Chez GustoVite, nous allions rapidité et authenticité pour vous offrir des plats 
@@ -55,31 +62,31 @@
             <h1>01 - Nos Menu</h1>
             <div class="menu-container">
                 <div class="menu-card">
-                    <img src="" alt="Entrées">
+                    <img src="src/images/menu/entree/salade.webp" alt="Entrées">
                     <div>
                         <h3>Entrées</h3>
-                        <p></p>
+                        <p>Pour commencer en toute gégèreté ou partager un moment de convivialité.</p>
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img src="" alt="Plats">
+                    <img src="src/images/menu/plats/poulet.webp" alt="Plats" loading="lazy" decoding="async" width="50" height="80">
                     <div>
                         <h3>Plats</h3>
-                        <p></p>
+                        <p>Des produits rigoureusement sélectionnés, travaillés avec passion par notre chef.</p>
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img src="" alt="Désserts">
+                    <img src="src/images/menu/desserts/banana-cake.webp" alt="Désserts" loading="lazy" decoding="async" width="50" height="80">
                     <div>
                         <h3>Désserts</h3>
-                        <p></p>
+                        <p>La touche finale pour conclure votre expérience sur une note de douceur.</p>
                     </div>
                 </div>
                 <div class="menu-card">
-                    <img src="" alt="Boisson">
+                    <img src="src/images/menu/boissons/cocktail.webp" alt="Boisson" loading="lazy" decoding="async" width="50" height="80">
                     <div>
                         <h3>Boissons</h3>
-                        <p></p>
+                        <p>Accompagnez vos plats d'une sélection de nos meilleurs cruss ou de cocktails signature.</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +98,7 @@
             <h1>02 - Qui somme nous ?</h1>
             <div class="about-contain">
                 <div class="contain">
-                    <img src="images/about.png" alt="Profil">
+                    <img src="src/images/about.webp" alt="Profil" loading="lazy" decoding="async" width="300" height="200">
                     <div class="text">
                         <p>
                             Bienvenue nous, le restaurant qui marie authenticité et rapidité au cœur de Dschang. <br> <br>
@@ -104,7 +111,7 @@
                 <div class="values">
                     <div class="value">
                         <div class="title">
-                            <img src="/images/icon/authenticite.png" alt="Valeur">
+                            <img src="src/images/icon/authenticite.webp" alt="Valeur" loading="lazy" decoding="async" width="100" height="100">
                             <p>Authenticité</p>
                         </div>
                         <span class="scroll">&#9660;</span>
@@ -114,7 +121,7 @@
                     </div>
                     <div class="value">
                         <div class="title">
-                            <img src="/images/icon/public.png" alt="Valeur">
+                            <img src="src/images/icon/public.webp" alt="Valeur" loading="lazy" decoding="async" width="100" height="100">
                             <p>Convialité</p>
                         </div>
                         <span class="scroll">&#9660;</span>
@@ -124,7 +131,7 @@
                     </div>
                     <div class="value">
                         <div class="title">
-                            <img src="/images/icon/gemmes.png" alt="Valeur">
+                            <img src="src/images/icon/gemmes.webp" alt="Valeur" loading="lazy" decoding="async" width="100" height="100">
                             <p>Qualité</p>
                         </div>
                         <span class="scroll">&#9660;</span>
@@ -134,7 +141,7 @@
                     </div>
                     <div class="value">
                         <div class="title">
-                            <img src="/images/icon/test-de-rapidite.png" alt="Valeur">
+                            <img src="src/images/icon/test-de-rapidite.webp" alt="Valeur" loading="lazy" decoding="async" width="100" height="100">
                             <p>Rapidité</p>
                         </div>
                         <span class="scroll">&#9660;</span>
@@ -150,9 +157,9 @@
         <section id="gallery" class="gallery fade-in">
             <h1>03 - Galerie</h1>
             <div class="gallery-contain" id="galleryContain">
-                <img src="/images/galerie/img1.jpg" alt="img1">
-                <img src="/images/galerie/img4.jpg" alt="img4">
-                <img src="/images/galerie/img2.jpg" alt="img2">
+                <img src="src/images/galerie/img1.webp" alt="img1" loading="lazy" decoding="async" width="1000" height="800">
+                <img src="src/images/galerie/img7.webp" alt="img4" loading="lazy" decoding="async" width="1000" height="800">
+                <img src="src/images/galerie/img2.webp" alt="img2" loading="lazy" decoding="async" width="1000" height="800">
             </div>
             <button class="more-btn">Voir plus</button>
         </section>
@@ -162,22 +169,22 @@
             <h1>04 - Réservation</h1>
             <div class="reservation-contain">
                 <div class="infos">
-                    <img src="/images/icon/reservation.png" alt="icon" class="reservation-icon">
+                    <img src="src/images/icon/reservation.webp" alt="icon" class="reservation-icon" loading="lazy" decoding="async" width="1500" height="1000">
                     <div>
                         <div class="info">
-                            <img src="/images/icon/localisation.png" alt="icon">
+                            <img src="src/images/icon/localisation.webp" alt="icon" loading="lazy" decoding="async" width="100" height="100">
                             <p>Dschang</p>
                         </div>
                         <div class="info">
-                            <img src="/images/icon/whatsapp.png" alt="icon">
+                            <img src="src/images/icon/whatsapp.webp" alt="icon" loading="lazy" decoding="async" width="100" height="100">
                             <p>Whatsapp</p>
                         </div>
                         <div class="info">
-                            <img src="/images/icon/heures-douverture.png" alt="icon">
+                            <img src="src/images/icon/heures-douverture.webp" alt="icon" loading="lazy" decoding="async" width="100" height="100">
                             <p>27H/7</p>
                         </div>
                         <div class="info">
-                            <img src="/images/icon/e-mail.png" alt="icon">
+                            <img src="src/images/icon/e-mail.webp" alt="icon" loading="lazy" decoding="async" width="100" height="100">
                             <p>E-mail</p>
                         </div>
                     </div>
@@ -224,75 +231,75 @@
       
                     <!-- review 1 -->
                     <div class="review-card">
-                        <img src="/images/user3.jpg" alt="Client 1" class="client-img">
+                        <img src="src/images/galerie/img1.webp" alt="Client 1" class="client-img" loading="lazy" decoding="async" width="200" height="200">
                         <h3>Jean Dupont</h3>
                         <p class="role">Client fidèle</p>
                         <div class="stars">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-moitie.png" alt="star">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-moitie.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
                         </div>
                         <p class="text-card">"Un accueil chaleureux et des plats toujours savoureux."</p>
                     </div>
 
                     <!-- review 2 -->
                     <div class="review-card">
-                        <img src="/images/user1.jpg" alt="Client 2" class="client-img">
+                        <img src="src/images/galerie/img2.webp" alt="Client 2" class="client-img" loading="lazy" decoding="async" width="200" height="200">
                         <h3>Sarah Nkou</h3>
                         <p class="role">Designer culinaire</p>
                         <div class="stars">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-moitie.png" alt="star">
-                            <img src="/images/icon/etoile-vide.png" alt="star">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-moitie.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-vide.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
                         </div>
                         <p class="text-card">"Une expérience unique, une présentation raffinée et un goût exceptionnel."</p>
                     </div>
 
                     <!-- review 3 -->
                     <div class="review-card">
-                        <img src="/images/user3.jpg" alt="Client 3" class="client-img">
+                        <img src="src/images/galerie/img2.webp" alt="Client 3" class="client-img" loading="lazy" decoding="async" width="200" height="200">
                         <h3>Michel T.</h3>
                         <p class="role">Gastronome</p>
                         <div class="stars">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
                         </div>
                         <p class="text-card">"Chaque visite est un vrai plaisir, un restaurant incontournable."</p>
                     </div>
 
                     <!-- review 4 -->
                     <div class="review-card">
-                        <img src="/images/user1.jpg" alt="Client 4" class="client-img">
+                        <img src="src/images/galerie/img1.webp" alt="Client 4" class="client-img" loading="lazy" decoding="async" width="200" height="200">
                         <h3>Laura M.</h3>
                         <p class="role">Étudiante</p>
                         <div class="stars">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-vide.png" alt="star">
-                            <img src="/images/icon/etoile-vide.png" alt="star">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-vide.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-vide.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
                         </div>
                         <p class="text-card">"Bon rapport qualité-prix, ambiance conviviale, je recommande."</p>
                     </div>
 
                     <!-- review 5 -->
                     <div class="review-card">
-                        <img src="/images/user2.jpg" alt="Client 5" class="client-img">
+                        <img src="src/images/galerie/img2.webp" alt="Client 5" class="client-img" loading="lazy" decoding="async" width="200" height="200">
                         <h3>David K.</h3>
                         <p class="role">Touriste</p>
                         <div class="stars">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-pleine.png" alt="star">
-                            <img src="/images/icon/etoile-vide.png" alt="star">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-pleine.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
+                            <img src="src/images/icon/etoile-vide.webp" alt="star" loading="lazy" decoding="async" width="50" height="50">
                         </div>
                         <p class="text-card">"Une belle découverte lors de mon voyage, je reviendrai."</p>
                     </div>
@@ -324,14 +331,14 @@
                 <a href="#avis">Avis</a>
             </nav>
             <div class="footer-social">
-                <a href="#" title="Instagram" class="footer-ico insta" aria-label="Instagram">
-                    <img src="/images/icon/instagram.png" alt="Instagram">
+                <a href="#" title="Instagram" class="footer-ico insta" aria-label="Instagram" >
+                    <img src="src/images/icon/instagram.webp" alt="Instagram" loading="lazy" decoding="async" width="50" height="50">
                 </a>
-                <a href="#" title="Facebook" class="footer-ico fb" aria-label="Facebook">
-                    <img src="/images/icon/facebook.png" alt="Facebook">
+                <a href="#" title="Facebook" class="footer-ico fb" aria-label="Facebook" >
+                    <img src="src/images/icon/facebook.webp" alt="Facebook" loading="lazy" decoding="async" width="50" height="50">
                 </a>
-                <a href="#" title="WhatsApp" class="footer-ico wa" aria-label="WhatsApp">
-                    <img src="/images/icon/whatsapp.png" alt="WhatsApp">
+                <a href="#" title="WhatsApp" class="footer-ico wa" aria-label="WhatsApp" >
+                    <img src="src/images/icon/whatsapp.webp" alt="WhatsApp" loading="lazy" decoding="async" width="50" height="50">
                 </a>
             </div>
         </div>

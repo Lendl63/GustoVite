@@ -33,7 +33,7 @@ async function loadMenu(container, category, file) {
             const card = document.createElement("div");
             card.classList.add("menu-item");
             card.innerHTML = `
-                <img src="${item.image}" alt="${item.nom}">
+                <img src="${item.image}" alt="${item.nom}" loading="lazy" decoding="async" width="400" height="500">
                 <div class="menu-info">
                     <h3>${item.nom}</h3>
                     <p>${item.description}</p>
