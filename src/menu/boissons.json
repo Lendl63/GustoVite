@@ -1,0 +1,50 @@
+[
+    {
+        "nom" : "Jus de gingembre frais",
+        "description" : "Boisson épicée et rafraîchissante, faite maison.",
+        "prix" : "800",
+        "image" : "/images/boissons/gimgembre.jpg"
+    },
+    {
+        "nom" : "Jus de bissap (hibiscus)",
+        "description" : "Délicieuse boisson locale, douce et légèrement acidulée.",
+        "prix" : "800",
+        "image" : "/images/boissons/hibiscus.jpg"
+    },
+    {
+        "nom" : "Jus d'ananas pressé",
+        "description" : "Pur jus de fruit naturel, sans additif.",
+        "prix" : "1000",
+        "image" : "/images/boissons/ananas.jpg"
+    },
+    {
+        "nom" : "Jus de corossol",
+        "description" : "Boisson fruitée, douce et onctueuse.",
+        "prix" : "1200",
+        "image" : "/images/boissons/corrosol.jpg"
+    },
+    {
+        "nom" : "Cocktail Gusto sans alcool",
+        "description" : "Mélange original de fruits exotiques, signature de la maison.",
+        "prix" : "1500",
+        "image" : "/images/boissons/cocktail.jpg"
+    },
+    {
+        "nom" : "Eau minérale",
+        "description" : "Disponible en grande et petite taille.",
+        "prix" : "500",
+        "image" : "/images/boissons/eau-gaz.jpg"
+    },
+    {
+        "nom" : "Boissons gazeuses",
+        "description" : "Coca-Cola, Fanta, Sprite, selon disponibilité.",
+        "prix" : "600",
+        "image" : "/images/boissons/mix-gusto.jpg"
+    },
+    {
+        "nom" : "Thé glacé maison",
+        "description" : "Infusion fraîche au citron et miel, servie glacée.",
+        "prix" : "1000",
+        "image" : "/images/boissons/iced-tea.jpg"
+    }
+]
