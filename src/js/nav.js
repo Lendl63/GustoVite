@@ -123,8 +123,8 @@ const isMobile = () => {
     const menu = document.querySelector('.menu');
 
     if (width < 1025) {
-        navDiv.style.display = "none";
-        navMenu.style.display = "flex";
+        nav.style.display = "none";
+        menu.style.display = "flex";
     } else {
         nav.style.display = "flex";
         menu.style.display = "none";
