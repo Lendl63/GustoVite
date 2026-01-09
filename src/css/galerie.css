@@ -1,3 +1,9 @@
+/*===== GALERIE PAGE =====*/
+#gallery.active{
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
+}
+
 .gallery-contain {
     column-count: 3;
     column-gap: 0;
