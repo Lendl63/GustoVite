@@ -3,48 +3,48 @@
         "nom" : "Jus de gingembre frais",
         "description" : "Boisson épicée et rafraîchissante, faite maison.",
         "prix" : "800",
-        "image" : "/images/boissons/gimgembre.jpg"
+        "image" : "images/menu/boissons/gimgembre.webp"
     },
     {
         "nom" : "Jus de bissap (hibiscus)",
         "description" : "Délicieuse boisson locale, douce et légèrement acidulée.",
         "prix" : "800",
-        "image" : "/images/boissons/hibiscus.jpg"
+        "image" : "images/menu/boissons/hibiscus.webp"
     },
     {
         "nom" : "Jus d'ananas pressé",
         "description" : "Pur jus de fruit naturel, sans additif.",
         "prix" : "1000",
-        "image" : "/images/boissons/ananas.jpg"
+        "image" : "images/menu/boissons/ananas.webp"
     },
     {
         "nom" : "Jus de corossol",
         "description" : "Boisson fruitée, douce et onctueuse.",
         "prix" : "1200",
-        "image" : "/images/boissons/corrosol.jpg"
+        "image" : "images/menu/boissons/corrosol.webp"
     },
     {
         "nom" : "Cocktail Gusto sans alcool",
         "description" : "Mélange original de fruits exotiques, signature de la maison.",
         "prix" : "1500",
-        "image" : "/images/boissons/cocktail.jpg"
+        "image" : "images/menu/boissons/cocktail.webp"
     },
     {
         "nom" : "Eau minérale",
         "description" : "Disponible en grande et petite taille.",
         "prix" : "500",
-        "image" : "/images/boissons/eau-gaz.jpg"
+        "image" : "images/menu/boissons/eau-gaz.webp"
     },
     {
         "nom" : "Boissons gazeuses",
         "description" : "Coca-Cola, Fanta, Sprite, selon disponibilité.",
         "prix" : "600",
-        "image" : "/images/boissons/mix-gusto.jpg"
+        "image" : "images/menu/boissons/mix-gusto.webp"
     },
     {
         "nom" : "Thé glacé maison",
         "description" : "Infusion fraîche au citron et miel, servie glacée.",
         "prix" : "1000",
-        "image" : "/images/boissons/iced-tea.jpg"
+        "image" : "images/menu/boissons/iced-tea.webp"
     }
 ]

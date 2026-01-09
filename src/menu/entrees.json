@@ -3,24 +3,24 @@
         "nom" : "Brochettes de bœuf marinnées",
         "description" : "Tendres morceaux de boeuf grillés au feu de bois, assaisonnés d'épices locales.",
         "prix" : "1500",
-        "image" : "/images/entree/brochettes.jpg"
+        "image" : "images/menu/entree/brochettes.webp"
     },
     {
         "nom" : "Beignets de banane plantain",
         "description" : "Délicieux beignets croustillants, légèrement sucrés, servis chauds.",
         "prix" : "1000",
-        "image" : "/images/entree/beignets.jpg"
+        "image" : "images/menu/entree/beignets.webp"
     },
     {
         "nom" : "Salade fraîcheur avocat-tomate",
         "description" : "Mélange coloré de crudités locales, relevé d'une vinaigrette maison.",
         "prix" : "1200",
-        "image" : "/images/entree/salade.jpg"
+        "image" : "images/menu/entree/salade.webp"
     },
     {
         "nom" : "Mini-pizzas Gusto",
         "description" : "Petites pizzas garnie de légumes et fromage, idéales à partager.",
         "prix" : "1800",
-        "image" : "/images/entree/pizza.jpg"
+        "image" : "images/menu/entree/pizza.webp"
     }
 ]

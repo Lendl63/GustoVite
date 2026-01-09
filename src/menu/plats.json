@@ -3,48 +3,48 @@
         "nom" : "Poulet braisé au feu de bois",
         "description" : "Poulet fermier mariné aux épices, braisé et servi avec plantains mûrs.",
         "prix" : "3500",
-        "image" : "/images/plats/poulet.jpg"
+        "image" : "images/menu/plats/poulet.webp"
     },
     {
         "nom" : "Poisson braisé Dschang",
         "description" : "Poisson frais braisé, accompagné de sauce pimantée et de bâtons de manioc.",
         "prix" : "3800",
-        "image" : "/images/plats/poisson.jpg"
+        "image" : "images/menu/plats/poisson.webp"
     },
     {
         "nom" : "Bouillon de bœuf spécial Gusto",
         "description" : "Spécialité de la maison, préparée avec arachides, crevettes et épices.",
         "prix" : "2500",
-        "image" : "/images/plats/bouillons.jpg"
+        "image" : "images/menu/plats/bouillons.webp"
     },
     {
         "nom" : "Spaghetti GustoVite",
         "description" : "Pâtes sautées à la sauce tomate maison, garnies de viande hachée et légumes.",
         "prix" : "2500",
-        "image" :"/images/plats/spaquettie.jpg"
+        "image" :"images/menu/plats/spaquettie.webp"
     },
     {
         "nom" : "Riz saute spécial Dschang",
         "description" : "Ris sauté parfumé au wok avec légumes frais et morceaux de poulet.",
         "prix" : "2800",
-        "image" : "/images/plats/riz.jpg"
+        "image" : "images/menu/plats/riz.webp"
     },
     {
         "nom" : "Sauté de bœuf aux légumes",
         "description" : "Émincé de bœuf tendre, sauté avec poivrons et oignons croquants.",
         "prix" :"3200",
-        "image" : "/images/plats/sauter-de-boeuf.jpg"
+        "image" : "images/menu/plats/sauter-de-boeuf.webp"
     },
     {
         "nom" : "Sauce arachide & viande fumée",
         "description" : "Sauce onctueuse aux arachides, servie avec riz au plaintain.",
         "prix" : "3000",
-        "image" : "/images/plats/sauce-arachide.jpg"
+        "image" : "images/menu/plats/sauce-arachide.webp"
     },
     {
         "nom" : "Assitte Gusto Mix",
         "description" : "Sélection gourmande : poulet braisé, plantains frits et légumes grillés.",
         "prix" : "4500",
-        "image" : "/images/plats/mix-gusto.jpg"
+        "image" : "images/menu/plats/mix-gusto.webp"
     }
 ]

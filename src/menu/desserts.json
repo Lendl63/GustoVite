@@ -3,24 +3,24 @@
         "nom" : "Tarte à la banane caramélisée",
         "description" : "Pâte croustillante garnie de bananes locales et d'un nappage de sucré.",
         "prix" : "1500",
-        "image" : "/images/desserts/banana-cake.jpg"
+        "image" : "images/menu/desserts/banana-cake.webp"
     },
     {
         "nom" : "Tarte à l'ananas",
         "description" : "Un grand classique de chez nous fais aux fruits de saison.",
         "prix" : "1200",
-        "image" : "/images/desserts/tarte-ananas.jpg"
+        "image" : "images/menu/desserts/tarte-ananas.webp"
     },
     {
         "nom" : "Salade de fruits frais",
         "description" : "Mélanger de fruits de saison servi sans ou avec alcool.",
         "prix" : "1000",
-        "image" : "/images/desserts/salade-fruit.jpg"
+        "image" : "images/menu/desserts/salade-fruit.webp"
     },
     {
         "nom" : "Mousse au chocolat maison",
         "description" : "Dessert onctueux et gourmant à base de chocolat noir.",
         "prix" : "1800",
-        "image" : "/images/desserts/mousse.jpg"
+        "image" : "images/menu/desserts/mousse.webp"
     }
 ]
