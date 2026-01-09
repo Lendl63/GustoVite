@@ -1,28 +1,6 @@
-//=============================================================
-// 1. ANIMATION DES SECTIONS AU SCROLL
-//=============================================================
-
-const sectionObserver = new IntersectionObserver( function (entries, observer) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add('show'); //appliquer l'animation
-            observer.unobserve(entry.target); //ne repete pas l'animation
-        }
-    });
-},{threshold: 0.3}); // section visible a 40%
-
-const fadeEls = document.querySelectorAll('.fade-in');
-
-fadeEls.forEach(fader => {
-    sectionObserver.observe(fader);
-});
-
-
-//=============================================================
-// 2. ACCORDÉON DES VALEURS
-//=============================================================
+//==============================================
+// 1. ACCORDÉON DES VALEURS
+//==============================================
 
 const fleches = document.querySelectorAll(".value .scroll");
 const valeurs = document.querySelectorAll('.value');
@@ -43,7 +21,7 @@ fleches.forEach(fleche => {
 
 
 // ============================================
-// 3. CAROUSEL D'AVIS (OPTIMISÉ)
+// 2. CAROUSEL D'AVIS (OPTIMISÉ)
 // ============================================
 
 function initCarousel() {

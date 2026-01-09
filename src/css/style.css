@@ -1,4 +1,6 @@
-/*==== HERO SECTION ====*/
+/*=============================================
+    1. HERO SECTION 
+=============================================*/
 .hero {
     min-height: 100vh;
     width: 100%;
@@ -51,7 +53,10 @@
     border: 3px solid var(--color-primary);
 }
 
-/*===== MENU SECTION =====*/
+/*=============================================
+    2. MENU SECTION 
+=============================================*/
+
 .menu-container {
     width: 80%;
     display: grid;
@@ -88,7 +93,10 @@
     margin-bottom: var(--space-xs);
 }
 
-/*===== ABOUT SECTION =====*/
+/*=============================================
+    3. ABOUT SECTION 
+=============================================*/
+
 #about {
     display: flex;
     flex-direction: column;
@@ -203,7 +211,10 @@
     opacity: 0;
 }
 
-/*==== ABOUT SECTION ====*/
+/*=============================================
+    4. GALERIE SECTION 
+=============================================*/
+
 .gallery-contain {
     column-count: 3;
     column-gap: 0;
@@ -225,8 +236,10 @@
     transform: scale(1.05);
 }
 
+/*=============================================
+    5. RESERVATION SECTION 
+=============================================*/
 
-/*===== RESERVATION SECTION =====*/
 .reservation-contain {
     display: flex;
     align-items: center;
@@ -273,6 +286,11 @@
     width: 5rem;
     height: 5rem;
 }
+
+
+/*=============================================
+    6. FORM
+=============================================*/
 
 .form {
     padding: 5rem;
@@ -350,6 +368,10 @@
     border: 2px solid var(--color-primary-dark);
 }
 
+
+/*=============================================
+    7. REVIEW SECTION 
+=============================================*/
 #review {
     padding: var(--space-xxl) var(--space-lg);
     text-align: center;

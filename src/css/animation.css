@@ -1,10 +1,14 @@
-/*===== ANIMATION NAV LINKS AU SCROLL =====*/
+/*========================================================
+    1. ANIMATION NAV LINKS AU SCROLL 
+========================================================*/
 .nav-link.active {
     color: var(--color-primary);
     border-bottom: 3px solid var(--color-primary);
 }
 
-/*===== ANIMATION DES SECTIONS =====*/
+/*======================================================
+    2. ANIMATION DES SECTIONS 
+======================================================*/
 .fade-in {
     opacity: 0;
     transform: translateY(3rem);
@@ -17,7 +21,9 @@
     transform: translateY(0);
 }
 
-/*===== ACCORDÉON DES VALEURS =====*/
+/*====================================================
+    3. ACCORDÉON DES VALEURS 
+====================================================*/
 .value.active .detail {
     max-height: 20rem;
     opacity: 1;
@@ -25,4 +31,126 @@
 
 .value.active .scroll {
     transform: rotate(180deg);
+}
+
+
+/*====================================================
+    4.  ANIMATION DU HERO
+====================================================*/
+.top {
+    transform: translateY(-8rem);
+    opacity: 0;
+    animation: slideDown 1.5s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+.left {
+    transform: translateX(-15rem);
+    opacity: 0;
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.right {
+    transform: translateX(15rem);
+    opacity: 0;
+    animation: slideInRight 1.5s ease-out forwards;
+}
+
+.fast {
+    animation-delay: 0.8s;
+}
+
+.slow {
+    animation-delay: 1.5s;
+}
+
+.bottom {
+    transform: translateY(10rem);
+    opacity: 0;
+    animation: slideUp 1.5s ease-out forwards;
+    animation-delay: 1.1s;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: all 0.6s ease-out;
+    will-change: transform, opacity;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.value {
+    opacity: 0;
+    transform: translateY(-6rem);
+    transition: all var(--transition-slow);
+}
+
+.value.fade-in-value {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.infos > img {
+    opacity: 0;
+    transform: translateX(-7rem);
+    transition: all var(--transition-slow);
+}
+
+.infos > img.slide-img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.infos .info {
+    opacity: 0;
+    transform: translateX(-4rem);
+    transition: all var(--transition-slow);
+}
+
+.infos .info.show-info {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.form {
+    opacity: 0;
+    transform: translateX(7rem);
+    transition: all var(--transition-slow);
+}
+
+.form.show-form {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
